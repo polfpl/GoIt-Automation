@@ -2,7 +2,7 @@ describe('Wejście na stronę GoIt', () => {
     // visit page
     beforeEach('Go to page', () => {
     cy.visit('https://www.edu.goit.global/pl/account/login');
-})
+});
 
 it('Zaologowanie i wylogowanie ', () => {
     // znalezienie pola email i wpisanie email użytkownika
@@ -20,5 +20,5 @@ it('Zaologowanie i wylogowanie ', () => {
     // kliknięsie przycisku wylogowania - wylogowanie 
     cy.get(':nth-child(9) > .next-bve2vl').click()
     
-})
-})
+});
+});

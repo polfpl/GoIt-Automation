@@ -19,6 +19,5 @@ it('Zaologowanie i wylogowanie ', () => {
     cy.get(':nth-child(9) > .next-bve2vl')
     // kliknięsie przycisku wylogowania - wylogowanie 
     cy.get(':nth-child(9) > .next-bve2vl').click()
-    
-});
+   });
 });

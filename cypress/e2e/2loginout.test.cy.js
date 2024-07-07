@@ -4,7 +4,7 @@ describe('Wejście na stronę GoIt', () => {
     cy.visit('https://www.edu.goit.global/pl/account/login');
 });
 
-it('Zaologowanie i wylogowanie ', () => {
+it('Zalogowanie i wylogowanie ', () => {
     // znalezienie pola email i wpisanie email użytkownika
     cy.get('#user_email').type('testowyqa@qa.team')
     // znalezienie pola password i wpisanie hasła

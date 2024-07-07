@@ -2,7 +2,7 @@ describe('User can visit GoIt page', () => {
     // visit page
     beforeEach('Go to page', () => {
     cy.visit('https://www.edu.goit.global/pl/account/login');
-})
+});
 
 it('Log in and log out ', () => {
     // find user email and type mail
@@ -19,5 +19,5 @@ it('Log in and log out ', () => {
     cy.get(':nth-child(12) > .next-bve2vl')
     // click logout button
     cy.get(':nth-child(12) > .next-bve2vl').click()
-})
+});
 });

@@ -1,3 +1,3 @@
 # GoIt-Automation
- Cypress
+## Cypress
 This repository stores files related to cypress tests

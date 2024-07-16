@@ -1,4 +1,4 @@
-class Login {
+export class Login {
     visit() {
       cy.visit("https://www.edu.goit.global/account/login");
     }

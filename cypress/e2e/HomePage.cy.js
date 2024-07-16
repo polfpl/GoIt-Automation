@@ -1,4 +1,4 @@
-import Login from "../pages/Login";
+import { Login } from "../pages/login";
 
 const loginPage = new Login();
 
@@ -10,7 +10,7 @@ describe("Page login object example", () => {
     
     it("login page test", () => {
         // login
-     loginPage.login();
+     loginPage.loginout();
         // logout
      loginPage.logout();
   });

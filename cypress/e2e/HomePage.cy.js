@@ -10,8 +10,8 @@ describe("Page login object example", () => {
     
     it("login page test", () => {
         // login
-     loginPage.login();
+        loginPage.login();
         // logout
-     loginPage.logout();
+        loginPage.logout();
   });
 });

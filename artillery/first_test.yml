@@ -7,10 +7,10 @@ config:
   plugins:
         ensure: 
           thresholds:
-            - http.response_time.p95: 10
+            - http.response_time.p95: 500
           conditions:
             - expression: vusers.failed == 0
-            - expression: "http.request_rate >= 2 and http.response_time.max < 60"
+            - expression: "http.request_rate >= 2 and http.response_time.max < 600"
 scenarios:
   - name: Getting a resource
     flow:

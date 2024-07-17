@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.13.0"
+  },
+  "dependencies": {
+    "postman": "^0.2.0"
   }
 }

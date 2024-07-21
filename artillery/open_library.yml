@@ -1,0 +1,46 @@
+config:
+  target: "http://openlibrary.org/books/OL1M/lists.json"
+  phases:
+    - duration: 1800
+      arrivalRate: 2
+      name: Load Test
+  plugins:
+    ensure: {}
+  ensure:
+    thresholds:
+      - http.response_time.p95: 1000
+    conditions:
+      - expression: vusers.failed == 0
+      - expression: "http.request_rate >= 6 and http.response_time.max < 2000"
+  payload:
+      path: "books.csv"
+      fields:
+        - "title"
+        - "description"
+      order: sequence
+      skipHeader: true    
+scenarios:
+  - name: Getting a resource
+    flow:
+      - post:
+          url: "{{ target }}post?param1={{ **title** }}"
+      - post: 
+          url: "{{ target }}post?param2={{ **description** }}"
+      - get:
+          url: "{{ target }}get"
+      - post: 
+          url: "{{ target }}post"
+          
+          json:
+           name: 18th Century Architecture
+           description: Studies of architectural practice, mainly English works
+           tags:
+            - Architecture
+            - 18th Century
+            - Drawings
+            - Buildings
+          #  seeds:
+          #   - "/books/OL1M"
+          #   - "/subjects/gothic_architecture"
+            
+              

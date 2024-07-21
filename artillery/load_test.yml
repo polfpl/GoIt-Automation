@@ -1,25 +1,25 @@
 config:
   target: "http://httpbin.org/"
   phases:
-    - duration: 1800
+    - duration: 180
       arrivalRate: 2
       name: Load Test
-    - duration: 300
+    - duration: 30
       arrivalRate: 1
       name: Scalability 1
-    - duration: 300
+    - duration: 30
       arrivalRate: 2
       name: Scalability 2
-    - duration: 300
+    - duration: 30
       arrivalRate: 3
       name: Scalability 3
-    - duration: 300
+    - duration: 30
       arrivalRate: 4
       name: Scalability 4
-    - duration: 300
+    - duration: 30
       arrivalRate: 5
       name: Scalability 5
-    - duration: 600
+    - duration: 60
       arrivalRate: 6
       name: Stress Test    
   plugins:

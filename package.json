@@ -13,6 +13,7 @@
     "cypress": "^13.13.0"
   },
   "dependencies": {
-    "postman": "^0.2.0"
+    "postman": "^0.2.0",
+    "yarn": "^1.22.22"
   }
 }

@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c",
-    "start": "http-server",
-    "test": "cypress run",
-    "cypress:open": "cypress open"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",

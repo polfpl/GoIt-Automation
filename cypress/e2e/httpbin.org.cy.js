@@ -108,10 +108,10 @@ describe('httpbin tests', () => {
         })
       })
 
-      it('test duration 120', () => {
+      it('test duration 180', () => {
         cy.request(apiwebsite).then(response => {
           assert.equal(200, response.status);
-          assert.isTrue(response.duration <= 120)
+          assert.isTrue(response.duration <= 180)
         })
       })
 

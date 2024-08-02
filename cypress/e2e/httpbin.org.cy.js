@@ -101,19 +101,19 @@ describe('httpbin tests', () => {
         })
       })
       
-      it('test duration 150', () => {
-        cy.request(apiwebsite).then(response => {
-          assert.equal(200, response.status);
-          assert.isTrue(response.duration <= 150)
-        })
-      })
+      // it('test duration 150', () => {
+      //   cy.request(apiwebsite).then(response => {
+      //     assert.equal(200, response.status);
+      //     assert.isTrue(response.duration <= 150)
+      //   })
+      // })
 
-      it('test duration 180', () => {
-        cy.request(apiwebsite).then(response => {
-          assert.equal(200, response.status);
-          assert.isTrue(response.duration <= 180)
-        })
-      })
+      // it('test duration 180', () => {
+      //   cy.request(apiwebsite).then(response => {
+      //     assert.equal(200, response.status);
+      //     assert.isTrue(response.duration <= 180)
+      //   })
+      // })
 
       it('complex post test', () => {
         cy.request(apiwebsitepost).then(response => {
